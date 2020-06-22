@@ -58,17 +58,17 @@ function calculateGrades ( marks) {
     //     sumOfGrades += grade;
     // }
     // let average = sumOfGrades / marks.length ;   // Extract to average function
-    let average = calculateAverage (marks);
+    const average = calculateAverage (marks);
 
     // Even though this conditions can be simplified, meaning that we could as just < 59 and the next < 70 and so on
     // because we are returning when a condition is met, it makes it clearly to read the code (business rules in this case)
-    if (average >=0 && average <=59 )
+    if (average >=0 && average < 60 )
         return 'F';
-    if (average >= 60 && average <= 69  )
+    if (average >= 60 && average < 70  )
         return 'D';
-    if (average >= 70 && average <= 79  )
+    if (average >= 70 && average < 80  )
         return 'C';
-    if (average >= 80 && average <= 89  )
+    if (average >= 80 && average < 90  )
         return 'B';
     if (average >= 90 && average <= 100  )
         return 'A';
