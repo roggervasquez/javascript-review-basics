@@ -6,13 +6,17 @@ console.log ('Count of truthy is', count);
 function countTruthy (elements) {
     let count  = 0;
     for (let i = 0; i < elements.length ; i++) {
-        let isTruthy = !isFalsy (elements[i]);
-        count = isTruthy ? count + 1 : count + 0;
+        //let isTruthy = !isFalsy (elements[i]);
+        //count = isTruthy ? count + 1 : count + 0;  // Not the best way, javascript already does that
+       
+        if (elements[i]) { // it will automatically evaluate if truthy ... nice!!
+           count++;
+        }   
     }
     return count;
-
 }
 
+// This is not the best way. Javascript already does that , but was good as exercise to know the isNaN function
 function isFalsy (item) {
     if (typeof item === 'undefined')
         return true;
