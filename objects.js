@@ -37,3 +37,18 @@ console.log(circle2);
 
 circle1.draw();
 circle2.draw();
+
+// Constructor, 
+// Camel case for Methods but Pascal Case for Constructor, First Capital letter
+
+function Rectangle (height, width){
+    this.height = height;
+    this.width = width;
+    this.draw = function () {
+        console.log ('Drawn Rectangle', height, width);
+    }
+    return this;  // Is not necessary but explicitly makes it clear
+}
+
+const rectangle1 = new Rectangle(10,20);
+rectangle1.draw();
