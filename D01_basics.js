@@ -45,7 +45,7 @@ console.log (person.lastName, person['age']);
 
 // For dynamic property access, the bracket notation works
 let selectedProperty = 'firstName';
-console.log ('the value of the selecte property is', person[selectedProperty]);
+console.log ('the value of the selected property is', person[selectedProperty]);
 
 // Arrays
 let selectedColors = [] ; //empty array , typeof an array = Object
