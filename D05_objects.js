@@ -52,7 +52,7 @@ function Rectangle (height, width){
 
 const rectangle1 = new Rectangle(10,20);
 rectangle1.draw();
-// add properties dynamically
+// add / delete properties dynamically
 rectangle1.newProperty = 'something';
 console.log(rectangle1);
 delete rectangle1.newProperty;
