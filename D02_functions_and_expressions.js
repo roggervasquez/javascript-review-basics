@@ -20,7 +20,7 @@ console.log(`Substract x=${x} y=${y} x-y=`, x - y) ; // substract
 console.log(`Multiply x=${x} y=${y} x * y=`, x * y) ; // multiply
 console.log(`Divide x=${x} y=${y} x / y=`, x / y) ; // Divide
 console.log(`Remainder x=${x} y=${y} x % y=`, x % y) ; // Remainder
-console.log(`Exponent x=${x} y=${y} x ** y=`, x ** y) ; // Remainder
+console.log(`Exponent x=${x} y=${y} x ** y=`, x ** y) ; // Exponent
 
 // Increment / decrement
 console.log (++x,--y);
@@ -45,7 +45,7 @@ console.log ('Equality operator');
 console.log ( x == 1) ;  // True
 console.log ( x  == '1'); // True also Lose equality operator
 console.log ( x === '1'); // False, not same type
-// Note: Javascript tries to compare the right element to the same type of the left and then only compares the value
+// Note for == : Javascript tries to compare the right element to the same type of the left and then only compares the value
 
 // Ternary operator
 let points = 90;
