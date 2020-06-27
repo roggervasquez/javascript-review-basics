@@ -1,3 +1,5 @@
+// Note  : in javascript engine Garbage Colleciton is automatic, meaning freeing unused memory
+
 const circle = {
     radius : 1,
     x : 10,
@@ -33,4 +35,3 @@ const otherObject = {
 };
 const circle6 = { ...circle4, ...otherObject }; // But objects properties are merged
 console.log('Circle6' ,circle6);
-

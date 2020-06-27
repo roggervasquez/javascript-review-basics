@@ -1,6 +1,6 @@
 # Review Javascript basic concepts
 
-Separeted javascript files to remind me of basic concepts, organized by subjects and exercise files.
+Separated javascript files to remind me of basic concepts, organized by subjects and exercise files.
 
 Following the course Javascript Basics by Mosh Hamedami.
 

@@ -58,3 +58,26 @@ selectedColors [3] ='Green';
 selectedColors.push ('Orange');
 selectedColors [7] = 'Black';  // Items 5,6 will be created but undefined
 console.log (selectedColors);
+
+
+// Javascript has a lot of builtin objects
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+/*
+Value properties---------
+These global properties return a simple value. They have no properties or methods.
+    Infinity
+    NaN
+    undefined
+    globalThis
+*/
+
+/*
+Function properties---------
+These global functions—functions which are called globally, rather than on an object—directly return their results to the caller.
+
+eval(), uneval(), isFinite(), isNaN(), parseFloat(), parseInt(), decodeURI(), decodeURIComponent(), encodeURI(), encodeURIComponent(),    
+
+Deprecated =>    escape() , unescape() 
+
+*/
