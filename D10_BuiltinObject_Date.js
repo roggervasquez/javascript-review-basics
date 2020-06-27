@@ -31,7 +31,7 @@ console.log (myBirthDay.toISOString());
 
 console.log (myBirthDay.toUTCString()); // prints Thu, 09 May 1974 19:00:00 GMT
 console.log ('Hour of my birthday, local', myBirthDay.getHours()); // prints 13, 1 pm local time
-console.log ('Hour of my birthday, local', myBirthDay.getUTCHours()); // prints 19, 7 pm UTC time
+console.log ('Hour of my birthday, UTC', myBirthDay.getUTCHours()); // prints 19, 7 pm UTC time
 
 myBirthDay.setUTCHours(20); // Set UTC hour to 8 pm, 
 console.log(myBirthDay.getHours()) // Get hours in local time  = 14 , 2 pm
