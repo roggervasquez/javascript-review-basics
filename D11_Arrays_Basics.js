@@ -56,6 +56,44 @@ let index = jobs.findIndex( (job) => {
 
 console.log('Index is', index);
 
+// Removing elements from an array, end, beginning, middle
+
+const numbers = [1,2,3,4,5,6,7];
+
+const lastElement = numbers.pop();
+console.log(numbers,lastElement);
+
+const firstElement = numbers.shift();
+console.log (numbers, firstElement);
+
+const middleElement = numbers.splice(2,1) ; // Means to remove 1 element from position 2, actually we can delete more
+console.log(numbers, middleElement);
+
+
+// Emptying an array
+
+let items = [1,2,3,4,5,6];
+let anotherItems = items;
+// Both are pointing to the same memory address.
+items = [] ; // this will make items point to a new memory address without elements
+console.log (items, ' - ', anotherItems) ; // But another items will still point to the original array.
+
+// we will need to actually set empty to anotherItems
+anotherItems = [] ; // Garbage collector eventually will recover the original space
+
+items = [1,2,3,4,5,6];
+anotherItems = items;
+// Other way is to set the length to zero, to truncate the array
+items.length = 0;
+console.log (items, ' + ', anotherItems) ;
+
+items = [1,2,3,4,5,6];
+anotherItems = items;
+
+// Another way is to use splice
+items.splice(0, items.length); // Remove all elements
+console.log (items, ' * ', anotherItems) ;
+
 
 
 
