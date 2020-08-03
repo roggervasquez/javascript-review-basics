@@ -44,4 +44,9 @@ console.log (areEqual(addr1,addr2));
 console.log (areSame(addr1,addr2));
 console.log (areSame(addr1,addr3));
 
+let addr4 = new AddressClass('new','orlando','31111');
+let addr5 = new AddressClass('new','orlando','31111');
+console.log(addr4);
+console.log(areEqual(addr4,addr5));
+
 
